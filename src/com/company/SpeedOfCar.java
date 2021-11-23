@@ -8,6 +8,7 @@ public class SpeedOfCar {
     public void howFast(){
 
         for (mph = 30; mph <= speedlimit; mph--);
+        System.oo
 
     }
 
