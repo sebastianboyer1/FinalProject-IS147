@@ -4,8 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        KeyFob x = new KeyFob();
-        System.out.println(x);
+        KeyFob fob = new KeyFob();
+        SpeedOfCar speed = new SpeedOfCar();
+
 
     }
+
 }

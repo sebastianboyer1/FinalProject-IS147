@@ -2,6 +2,7 @@ package com.company;
 
 public class KeyFob {
 
-    String HelloWorld;
+    Boolean unlock = true;
+    Boolean lock = false;
 
 }
