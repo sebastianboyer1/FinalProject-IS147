@@ -7,7 +7,7 @@ public class Main {
 
         KeyFob fob = new KeyFob();
         SpeedOfCar speed = new SpeedOfCar();
-
+        Turning direction = new Turning();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want to go for a drive? (Enter: true/false) ");
@@ -19,6 +19,8 @@ public class Main {
             } else {
                 System.out.print("Come back when you want to go for a drive!");
             }
+
+            System.out.println("Hello World");
 
 
 
