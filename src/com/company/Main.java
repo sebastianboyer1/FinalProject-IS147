@@ -7,7 +7,7 @@ public class Main {
 
         KeyFob fob = new KeyFob();
         SpeedOfCar speed = new SpeedOfCar();
-
+        FuelGauge fuel = new FuelGauge();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want to go for a drive? (Enter: true/false) ");
@@ -18,10 +18,6 @@ public class Main {
                 System.out.print("Lets go for a drive! ");
             } else {
                 System.out.print("Come back when you want to go for a drive!");
-            }
-
-
-
-
+        }
     }
 }
