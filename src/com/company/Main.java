@@ -5,9 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        KeyFob fob = new KeyFob();
         SpeedOfCar speed = new SpeedOfCar();
-        Turning direction = new Turning();
         ArrayForGas gasArray = new ArrayForGas();
 
         System.out.print("Do you want to go for a drive? (true for yes/false for no) ");
