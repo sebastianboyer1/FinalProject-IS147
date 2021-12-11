@@ -8,6 +8,7 @@ public class Main {
         KeyFob fob = new KeyFob();
         SpeedOfCar speed = new SpeedOfCar();
         Turning direction = new Turning();
+        ArrayForGas gasArray = new ArrayForGas();
 
         System.out.print("Do you want to go for a drive? (true for yes/false for no) ");
         Scanner sc = new Scanner(System.in);
@@ -24,15 +25,19 @@ public class Main {
         System.out.println("Up ahead there is a car slowing down do you want to merge right? (true for yes/false for no)");
         boolean merge = sc.nextBoolean();
         if (merge == true) {
-            System.out.println("You passed them on the left and saw that they were asleep at the Wheel! Lucky Break! Lets take the next exit.");
+            System.out.println("You passed them on the right and saw that they were asleep at the Wheel! Lucky Break! Lets take the next exit.");
         } else if (merge == false) {
             System.out.println("Uh oh they immediately stopped and hit you! You're safe but your car is totaled. Come back next time for your next drive.");
         }
 
         System.out.println("You're running low on gas lets pull over at the nearest gas station");
-        System.out.println("What is the price of gas right now?");
-        Double price = sc.nextDouble();
         System.out.println("Here is the table for how much gas is going to cost");
+        gasArray.printArrayForGas();
+        System.out.println("How much Gas would you like to get right now?");
+        Double price = sc.nextDouble();
+        System.out.println("Great we are all fueled up and ready to go now!");
+
+
         sc.close();
 
 
