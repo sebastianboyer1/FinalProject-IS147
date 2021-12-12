@@ -37,16 +37,16 @@ public class gas {
 
         switch (gallons) {
             case 1:
-                System.out.println("You paid $1.50");
+                System.out.println("You're credit card has been charged $1.50 at the High's gas station");
                 break;
             case 2:
-                System.out.println("You paid $3.50");
+                System.out.println("You're credit card has been charged $3.50 at the High's gas station");
                 break;
             case 3:
-                System.out.println("You paid $5.50");
+                System.out.println("You're credit card has been charged $5.50 at the High's gas station");
                 break;
             case 4:
-                System.out.println("You paid $7.50");
+                System.out.println("You're credit card has been charged $7.50 at the High's gas station");
                 break;
         }
         System.out.println("Now that you've filled your gas tank up, let's get back on the road and drive!");

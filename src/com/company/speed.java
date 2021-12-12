@@ -22,5 +22,7 @@ public class speed {
         speed = distance/time;
 
         System.out.println("Your current speed is = " + speed + " mph");
+
+        System.out.println("You better slow down! The speed limit on this road is: " + (speed - 10) + "mph");
     }
 }
