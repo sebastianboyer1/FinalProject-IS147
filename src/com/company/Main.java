@@ -5,41 +5,44 @@ public class Main {
 
     public static void main(String[] args) {
 
-        SpeedOfCar speed = new SpeedOfCar();
-        ArrayForGas gasArray = new ArrayForGas();
+        Scanner input = new Scanner(System.in);
 
-        System.out.print("Do you want to go for a drive? (true for yes/false for no) ");
-        Scanner sc = new Scanner(System.in);
-        boolean bn = sc.nextBoolean();
-        if (bn == true) {
-            System.out.println("Lets go for a drive");
-        } else if (bn == false) {
-            System.out.println("Come back when you want to go for a drive");
+        gas option = new gas();
+        speed limit = new speed();
+
+
+//      System.out.print("Do you want to go for a drive? (true for yes/false for no) ");
+//        boolean bn = sc.nextBoolean();
+//        if (bn == true) {
+//            System.out.println("Lets go for a drive");
+//        } else if (bn == false) {
+//            System.out.println("Come back when you want to go for a drive");
+//        }
+
+        String Destination;
+
+        System.out.println("Enter the location you wish to go to: ");
+        String destination = input.next();
+        System.out.println("The directions to: " + destination + ", have been set, let's go!");
+
+        option.gasLow();
+        String[][] gasPrice = {
+                {"$1.50", "gets you: ", "1 Gallon"},
+                {"$3.50", "gets you: ", "2 Gallons"},
+                {"$5.50", "gets you: ", "3 Gallons"},
+                {"$7.50", "gets you: ", "4 Gallons"}};
+        option.gasPrice(gasPrice);
+
+        option.tankFilled();
+
+        limit.speedLimit();
+
         }
-        System.out.println("Where do you want to go? (UMBC, Store, Hospital)");
-        String destination = sc.next();
-        System.out.println("Great I know how to get to the " + destination + " lets go!");
-
-        System.out.println("Up ahead there is a car slowing down do you want to merge right? (true for yes/false for no)");
-        boolean merge = sc.nextBoolean();
-        if (merge == true) {
-            System.out.println("You passed them on the right and saw that they were asleep at the Wheel! Lucky Break! Lets take the next exit.");
-        } else if (merge == false) {
-            System.out.println("Uh oh they immediately stopped and hit you! You're safe but your car is totaled. Come back next time for your next drive.");
-        }
-
-        System.out.println("You're running low on gas lets pull over at the nearest gas station");
-        System.out.println("Here is the table for how much gas is going to cost");
-        gasArray.printArrayForGas();
-        System.out.println("How much Gas would you like to get right now?");
-        Double price = sc.nextDouble();
-        System.out.println("Great we are all fueled up and ready to go now!");
-
-
-        sc.close();
-
-
     }
-    }
+
+
+
+
+
 
 
