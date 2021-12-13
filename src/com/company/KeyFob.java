@@ -2,25 +2,31 @@ package com.company;
 
 
 public class KeyFob {
-    private String locked;
+    private String lock;
+    private double time;
 
     public KeyFob() {
-        this.locked = "Locked ";
+        this.lock = "Locked ";
+        this.time = 4.35;
     }
-
-    public KeyFob(String locked) {
-        this.locked = locked;
-
+    public KeyFob(String lock, double time) {
+        this.lock = lock;
+        this.time = time;
     }
-
-    public String getLocked() {
-        return locked;
+    public String getLock() {
+        return lock;
     }
-
-    public void setLocked(String lock) {
-        this.locked = lock;
-
+    public void setLock(String lock) {
+        this.lock = lock;
+    }
+    public double getTime(){
+        return time;
+    }
+    public void setTime(double time) {
+        this.time = time;
     }
 }
+
+
 
 
