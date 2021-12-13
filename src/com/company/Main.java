@@ -11,26 +11,14 @@ public class Main {
         speed limit = new speed();
         KeyFob fob = new KeyFob();
 
-
-//      System.out.print("Do you want to go for a drive? (true for yes/false for no) ");
-//        boolean bn = sc.nextBoolean();
-//        if (bn == true) {
-//            System.out.println("Lets go for a drive");
-//        } else if (bn == false) {
-//            System.out.println("Come back when you want to go for a drive");
-//        }
         String answer;
-        boolean yn;
-
         System.out.println("Do you want to go for a drive? (y/n)");
         while (true) {
             answer = input.nextLine().trim().toLowerCase();
             if (answer.equals("y")) {
-                yn = true;
                 System.out.println("Lets go for a drive");
                 break;
             } else if (answer.equals("n")) {
-                yn = false;
                 System.out.println("Come back when you want to go for a drive");
             } else {
                 System.out.println("Sorry, I didn't catch that. Please answer y/n");
@@ -55,8 +43,12 @@ public class Main {
 
         limit.speedLimit();
 
-        System.out.println("Your car is: " + fob.getLock() + " Your car is: " + fob.getUnlock());
+        limit.speedLimit();
 
+        MessageInGame slower = new MessageInGame();
+        slower.display();
+
+        System.out.println("Your car is: " + fob.getLock() + " Your car is: " + fob.getUnlock());
 
         }
     }
