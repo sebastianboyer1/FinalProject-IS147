@@ -10,24 +10,11 @@ public class Main {
         gas option = new gas();
         speed limit = new speed();
         KeyFob fob = new KeyFob();
+        MessageInGame thankYou = new MessageInGame();
+        StartOfGame start = new StartOfGame();
 
-        String answer;
-        boolean yn;
 
-        System.out.println("Do you want to go for a drive? (y/n)");
-        while (true) {
-            answer = input.nextLine().trim().toLowerCase();
-            if (answer.equals("y")) {
-                yn = true;
-                System.out.println("Lets go for a drive");
-                break;
-            } else if (answer.equals("n")) {
-                yn = false;
-                System.out.println("Come back when you want to go for a drive");
-            } else {
-                System.out.println("Sorry, I didn't catch that. Please answer y/n");
-            }
-        }
+        start.start();
 
         System.out.println("Your car is: " + fob.getLock() + "At: " + fob.getTime() + " PM");
 
@@ -36,6 +23,8 @@ public class Main {
         System.out.println("Enter the location you wish to go to: ");
         String destination = input.next();
         System.out.println("The directions to: " + destination + ", have been set, let's go!");
+
+        thankYou.message();
 
         option.gasLow();
         String[][] gasPrice = {
