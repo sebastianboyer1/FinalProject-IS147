@@ -13,6 +13,12 @@ public class Main {
         MessageInGame thankYou = new MessageInGame();
         StartOfGame start = new StartOfGame();
         Turning watchOut = new Turning();
+        ThanksForPlaying goodJob = new ThanksForPlaying() {
+            @Override
+            public void thanksForPlaying() {
+
+            }
+        };
 
         start.start();
 
@@ -39,6 +45,8 @@ public class Main {
         limit.speedLimit();
 
         watchOut.crash();
+
+        goodJob.gracias();
 
 
 
