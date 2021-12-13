@@ -9,6 +9,7 @@ public class Main {
 
         gas option = new gas();
         speed limit = new speed();
+        KeyFob fob = new KeyFob();
 
 
 //      System.out.print("Do you want to go for a drive? (true for yes/false for no) ");
@@ -36,6 +37,9 @@ public class Main {
         option.tankFilled();
 
         limit.speedLimit();
+
+        System.out.println("Your car is: " + fob.getLock() + " Your car is: " + fob.getUnlock());
+
 
         }
     }

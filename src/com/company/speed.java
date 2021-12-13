@@ -25,4 +25,5 @@ public class speed {
 
         System.out.println("You better slow down! The speed limit on this road is: " + (speed - 10) + "mph");
     }
+
 }
