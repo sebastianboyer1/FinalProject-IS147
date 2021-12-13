@@ -12,7 +12,7 @@ public class Main {
         KeyFob fob = new KeyFob();
         MessageInGame thankYou = new MessageInGame();
         StartOfGame start = new StartOfGame();
-
+        Turning watchOut = new Turning();
 
         start.start();
 
@@ -37,6 +37,8 @@ public class Main {
         option.tankFilled();
 
         limit.speedLimit();
+
+        watchOut.crash();
 
 
 
