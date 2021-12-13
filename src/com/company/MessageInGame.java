@@ -15,5 +15,4 @@ public class MessageInGame extends speed{
                 super.speedLimit();
 
             }
-
 }
