@@ -13,15 +13,12 @@ public class gas {
             System.out.println("Oh no! You only have 1 gallon left: type '2' to navigate to the nearest gas station: ");
         }
         {
-
-
             int response = input.nextInt();
             if (response == 2) {
                 System.out.println("You have arrived at the gas station - Here is a table of the gas prices: ");
             }
         }
     }
-
         public void gasPrice (String array[][]){
 
             for (String[] array1 : array) {
@@ -32,7 +29,6 @@ public class gas {
                 System.out.println("]");
             }
         }
-
         public void tankFilled () {
             Scanner input = new Scanner(System.in);
             int gallons;
@@ -53,7 +49,7 @@ public class gas {
                     System.out.println("You're credit card has been charged $7.50 at the High's gas station");
                     break;
             }
-            System.out.println("Now that you've filled your gas tank up, let's get back on the road and drive!");
+            System.out.println("Now that you've filled your gas tank, let's get back on the road and drive!");
         }
     }
 
